@@ -399,6 +399,39 @@ main {
   }
 }
 
+/* Mobile: make hero and contact match other sections' width */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .hero-content {
+    max-width: none;
+    padding: 0;
+  }
+
+  .hero-content p {
+    max-width: none;
+  }
+
+  .hero-media {
+    height: 220px;
+  }
+
+  .contact-section .container {
+    padding: 0 16px;
+  }
+}
+
 /* Services hero height override (slightly shorter than default page-hero) */
 .page-hero.services-hero .hero-inner {
   min-height: 360px;
